@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Huu Bang - SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png" ></li>
+                <li><img src="images/inbox.png" ></li>
+                <li><img src="images/video.png" ></li>
+                
+            </ul>
+        </div>
+        <div class="nav-center">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-right">
+        
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/daiDien.jpg" >
+            </div>
+        </div>
+        <!---------------------settings-menu-------------------->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="images/daiDien.jpg" >
+                    <div>
+                        <p>Lê Hữu Bằng</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" >
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!---------------------left-sidebar-------------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png">Latest new</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/group.png">Group</a>
+                <a href="#"><img src="images/marketplace.png">Markerplace</a>
+                <a href="#"><img src="images/watch.png">watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png" >Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png" >Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png" >Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png" >Website Experts</a>
+            </div>
+        </div>
+        <!---------------------main-sidebar-------------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/kiet_story.jpg">
+                    <p>Tuấn Kiệt</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/thanhNgan_story.jpg">
+                    <p>Thanh Ngân</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/Khoi_story.jpg">
+                    <p>Nguyễn Huy Khôi</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/thienDat_story.jpg">
+                    <p>Trần Thiện Đạt</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/daiDien.jpg" >
+                    <div>
+                        <p>Lê Hữu Bằng</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea  rows="3" placeholder="What's on your mind, Huu Bang? "></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/daiDien.jpg" >
+                        <div>
+                            <p>Lê Hữu Bằng</p>
+                            <span>June 20 2023, 7:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+               
+                <p class="post-text">Subcribe <span>Easy Tourials</span> Facebook channel to watch more video on website Development
+                    <a href="#">#BTHope</a> <a href="#">#BTHope FF</a>
+                </p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/daiDien.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/daiDien.jpg" >
+                        <div>
+                            <p>Lê Hữu Bằng</p>
+                            <span>June 20 2023, 7:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+               
+                <p class="post-text">Subcribe <span>Easy Tourials</span> Facebook channel to watch more video on website Development
+                    <a href="#">#BTHope</a> <a href="#">#BTHope FF</a>
+                </p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/daiDien.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/daiDien.jpg" >
+                        <div>
+                            <p>Lê Hữu Bằng</p>
+                            <span>June 20 2023, 7:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+               
+                <p class="post-text">Subcribe <span>Easy Tourials</span> Facebook channel to watch more video on website Development
+                    <a href="#">#BTHope</a> <a href="#">#BTHope FF</a>
+                </p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/daiDien.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/daiDien.jpg" >
+                        <div>
+                            <p>Lê Hữu Bằng</p>
+                            <span>June 20 2023, 7:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+               
+                <p class="post-text">Subcribe <span>Easy Tourials</span> Facebook channel to watch more video on website Development
+                    <a href="#">#BTHope</a> <a href="#">#BTHope FF</a>
+                </p>
+                <img src="images/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/daiDien.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/daiDien.jpg" >
+                        <div>
+                            <p>Lê Hữu Bằng</p>
+                            <span>June 20 2023, 7:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+               
+                <p class="post-text">Subcribe <span>Easy Tourials</span> Facebook channel to watch more video on website Development
+                    <a href="#">#BTHope</a> <a href="#">#BTHope FF</a>
+                </p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/daiDien.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/daiDien.jpg" >
+                        <div>
+                            <p>Lê Hữu Bằng</p>
+                            <span>June 20 2023, 7:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+               
+                <p class="post-text">Subcribe <span>Easy Tourials</span> Du lịch Maldives, đúng!
+                    5 ngày 4 đêm, đúng!
+                    Bia Saigon Chill biến mọi thứ thành hiện thực nhanh-gọn-lẹ!
+                    Khoảng cách từ Việt Nam đến Maldives nay chỉ còn là... một nắp Bia Saigon Chill!
+                    Cơ hội không đến nhiều lần, và khi có cơ hội chill thủ hãy sẵn sàng "nghênh chiến"! Sảng khoái từ vị bia và chill gấp bội khi săn được cơ hội đi Maldives! Mua ngay kẻo lỡ!
+                    
+                </p>
+                <img src="images/video_QuangCao.mp4" class="post-img">
+                <div class="class-she-adverment">
+                    <button></button>
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/daiDien.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load More</button>
+
+
+        </div>
+        <!---------------------right-sidebar-------------------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Ho Chi Minh</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Teach Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/sonnees.jpg" alt="">
+                </div>
+                <p>Nguyen Van Son</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/phuongDuyen.jpg" alt="">
+                </div>
+                <p>Bui Nguyen Phuong Duyen</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2023 - Easy Tutorials Facebook Channel</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

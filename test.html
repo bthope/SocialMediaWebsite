@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    //1. XML Parser
+    /*
+    var parser, xmlDoc;
+    var text = "<bookstore><book>" +
+    "<title>Everyday Italian</title>" +
+    "<author>Giada De Laurentiis</author>" +
+    "<year>2005</year>" +
+    "</book></bookstore>";
+
+    parser = new DOMParser();
+    xmlDoc = parser.parseFromString(text,"text/xml");
+
+    document.getElementById("demo").innerHTML =
+    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    */
+    //2. XML DOM
+    /*
+    var text, parser, xmlDoc;
+
+    text = "<bookstore><book>" +
+    "<title>Everyday Italian</title>" +
+    "<author>Giada De Laurentiis</author>" +
+    "<year>2005</year>" +
+    "</book></bookstore>";
+    
+    parser = new DOMParser();
+    xmlDoc = parser.parseFromString(text,"text/xml");
+    
+    document.getElementById("demo").innerHTML =
+    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    */
+    //3. Promise Object
+    /*
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+      }
+      
+      let myPromise = new Promise(function(myResolve, myReject) {
+        let x = 0;
+      
+      // some code (try to change x to 5)
+      
+        if (x == 0) {
+          myResolve("OK");
+        } else {
+          myReject("Error");
+        }
+      });
+      
+      myPromise.then(
+        function(value) {myDisplayer(value);},
+        function(error) {myDisplayer(error);}
+      ); */$
+    // Tạo 3 promise (get API)
+
+ 
+    
+</script>
+
+</body>
+</html>
